@@ -7,6 +7,7 @@ const newRoute = require('./routes/new');
 const indexRoute = require('./routes/index');
 
 app.use(express.static(assetsPath));
+app.use(express.urlencoded({ extended: true }));
 app.use('/new',newRoute);
 app.use('/',indexRoute);
 
