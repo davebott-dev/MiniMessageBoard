@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="./new.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./new.css" />
+  </head>
+  <body>
     <header>
-        <h1>New Message Form</h1>
-        <a href="/"><button>See All Messages</button></a>
+      <h1><%= title %></h1>
+      <a href="/"><button>See All Messages</button></a>
     </header>
     <body>
-        <form method="POST" action="/new">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name ="userName" placeholder="Enter name...">
-            </div>
-            <div>
-                <label for="message">Message:</label>
-                <textarea id = "message" name = "userMessage" placeholder="Enter text..."></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+      <form method="POST" action="/new">
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="userName"
+            placeholder="Enter name..."
+          />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="userMessage"
+            placeholder="Enter text..."
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </body>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

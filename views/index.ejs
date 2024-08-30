@@ -11,18 +11,15 @@
       <div class="title"><a class="titleLink" href="/"><%= title %></a></div>
       <a class="btnLink" href="/new"><button>Add New Message</button></a>
     </header>
-  
+
     <main>
-    <div class="gridCont">
-      <% messages.forEach((message) => {%> <%- include ('message',
-      {message:message.text, user: message.user, date: message.added}); %> <%
-      }); %>
-    </div>
+      <div class="gridCont">
+        <% messages.forEach((message) => {%> <%- include ('message',
+        {message:message.text, user: message.user, date: message.added,
+        index:message.index}); %> <% }); %>
+      </div>
     </main>
 
-    <footer>
-
-    </footer>
-  
+    <footer></footer>
   </body>
 </html>
