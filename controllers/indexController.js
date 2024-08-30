@@ -1,25 +1,4 @@
-const messages = [
-  {
-    text: "Hi there!",
-    user: "David B.",
-    added: new Date().toLocaleDateString("en-us", {
-      weekday: "long",
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    }) + ' ' + new Date().toLocaleTimeString(),
-  },
-  {
-    text: "Hello World",
-    user: "Tech Guy",
-    added: new Date().toLocaleDateString("en-us", {
-      weekday: "long",
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    }) + ' ' + new Date().toLocaleTimeString(),
-  },
-];
+const messages = require('./messageArr')
 
 module.exports = {
   get: (req, res) => {
@@ -35,6 +14,7 @@ module.exports = {
         month: "short",
         day: "numeric",
       })+ ' ' + new Date().toLocaleTimeString(),
+      index: messages[messages.length-1].index+1
     });
     res.redirect("/");
   },
