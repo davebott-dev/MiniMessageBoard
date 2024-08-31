@@ -1,0 +1,64 @@
+html{
+    margin: 0;
+    padding:0 ;
+    height: 100%;
+    width: 100%;
+    font-family: monospace,'Courier New', Courier ;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 15px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+form>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#name,#message{
+    width: 500px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    padding: 15px;
+    font-family: monospace,'Courier New', Courier ;
+}
+#name{
+    min-height: 40px;
+}
+#message{
+    min-height:125px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    font-family: monospace,'Courier New', Courier ;
+    background: #2563EB;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: max-content;
+    height: 45px;
+    padding: 0px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
