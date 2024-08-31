@@ -19,18 +19,21 @@ form{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    
 }
 form>div{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    min-width: 200px;
 }
 #name,#message{
-    width: 500px;
     border-radius: 7px;
     border: 1px solid gray;
     padding: 15px;
     font-family: monospace,'Courier New', Courier ;
+    
 }
 #name{
     min-height: 40px;
@@ -44,6 +47,7 @@ header{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 button{
     font-family: monospace,'Courier New', Courier ;
