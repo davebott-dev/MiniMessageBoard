@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Message</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="/css/message.css">
   </head>
   <body>
     <header>
       <div class="title">Single Message</div>
+      <div>
+        <a class="btnLink" href="/new"><button>Add New Message</button></a>
+        <a href="/"><button>See All Messages</button></a>
+      </div>
     </header>
 
     <main>
-      <%= text %>
-      <%= user %>
-      <%= added%>
+      <div><%= text %></div>
+      <div>
+        <div><%= user %></div>
+        <div><%= added %></div>
+      </div>
     </main>
 
     <footer></footer>
