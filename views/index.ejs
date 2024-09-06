@@ -15,7 +15,7 @@
     <main>
       <div class="gridCont">
         <% messages.forEach((message) => {%> <%- include ('message',
-        {message:message.text, user: message.user, date: message.added,
+        {message:message.text, username: message.username, date: message.added,
         index:message.index}); %> <% }); %>
       </div>
     </main>
