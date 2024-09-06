@@ -1,4 +1,4 @@
-const messages = require("./messageArr");
+
 
 module.exports = {
   get: (req, res) => {
