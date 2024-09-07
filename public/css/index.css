@@ -85,3 +85,8 @@ button:hover{
     flex-direction: column;
     color: #737373;
 }
+
+li {
+    color: red;
+    font-weight: bold;
+}
