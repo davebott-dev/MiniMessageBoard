@@ -1,13 +1,12 @@
+const db = require("../models/query");
 
-
-module.exports = {
-  get: (req, res) => {
-    const  {messageId}  = req.params;
-    res.render("singleMessage", {
-      text: messages[messageId - 1].text,
-      user: messages[messageId - 1].user,
-      added: messages[messageId - 1].added,
-    });
-    
-  },
+exports.getSinglePost = async (req, res) => {
+  const index = req.params.messageId;
+  const data = await db.getSingleMessage(index);
+  res.render("singleMessage", {
+    text: data[0].text,
+    username: data[0].username,
+    added: data[0].added,
+    index: data[0].id
+  });
 };

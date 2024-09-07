@@ -12,3 +12,14 @@ exports.insertData = async (text, username, added) => {
   );
 };
 
+exports.getSingleMessage = async (index) => {
+  const { rows } = await pool.query(
+    "SELECT * FROM messageboard WHERE id = ($1)",
+    [index]
+  );
+  return rows;
+};
+
+exports.deleteData = async(index) => {
+  await pool.query("DELETE FROM messageboard WHERE id =($1)", [index])
+}
