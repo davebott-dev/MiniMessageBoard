@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Page</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">Error Page</div>
+      <div>
+        <a class="btnLink" href="/new"><button>Add New Message</button></a>
+        <a href="/"><button>See All Messages</button></a>
+      </div>
+    </header>
+
+    <main>
+      <ul>
+        <% errors.forEach((error) => {%>
+            <li> <%=error.msg%> </li>
+
+        <% }); %>
+        </ul>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
