@@ -18,9 +18,12 @@
     <main>
       <div><%= text %></div>
       <div>
-        <div><%= user %></div>
+        <div><%= username %></div>
         <div><%= added %></div>
       </div>
+      <form method="POST" action="/message/<%= index %>">
+        <button type="submit">Delete</button>
+      </form>
     </main>
 
     <footer></footer>
